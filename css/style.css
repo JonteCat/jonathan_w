@@ -1,1 +1,44 @@
 /* Denna fil skall innehålla din CSS kod */
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 2%;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "nv nv nv"
+    "wp wp wp";
+
+}
+
+header {
+    grid-area: h1;
+}
+
+nav {
+    display: flex;
+    margin: 5%;
+    grid-area: nv;
+    justify-content: space-between;
+}
+
+#welcomePicture {
+    grid-area: wp;
+}
+
+#homeButton {
+    order: 1;
+}
+
+#menyButton {
+    order: 2;
+}
+
+#aboutUsButton {
+    order: 3;
+}
