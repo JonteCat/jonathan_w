@@ -2,18 +2,23 @@
 
 body {
     margin: 0;
+    /*background-color: aqua;*/
 }
 
 #wrapper {
+    
     width: 100vw;
-    height: 100vh;
+    height: 300vh;
     display: grid;
-    grid-template-rows: 10% 2%;
+    grid-template-rows: 2fr 1fr 5fr 5fr 5fr 3fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "h1 h1 h1"
-    "nv nv nv"
-    "wp wp wp";
-
+    "h1 h1"
+    "nv nv"
+    "wp wp"
+    "wt wt"
+    "sc sc"
+    "ft ft";
 }
 
 header {
@@ -22,13 +27,10 @@ header {
 
 nav {
     display: flex;
-    margin: 5%;
+    margin: 0;
     grid-area: nv;
     justify-content: space-between;
-}
-
-#welcomePicture {
-    grid-area: wp;
+    background-color: aqua;
 }
 
 #homeButton {
@@ -41,4 +43,36 @@ nav {
 
 #aboutUsButton {
     order: 3;
+}
+
+#welcomePicture {
+    display: flex;
+    justify-content: center;
+    color: white;
+    grid-area: wp;
+    background-color: green;
+    background-image: url("../img/");
+}
+
+.background-image {
+    border-radius: 15px;
+}
+
+#welcomeText {
+    grid-area: wt;
+}
+section {
+    display: grid;
+    grid-template-areas: 
+    "p1 p2"
+    "p3 oh";
+    grid-area: sc;
+}
+
+
+
+footer {
+    display: flex;
+    background-color: rgb(78, 70, 74);
+    grid-area: ft;
 }
