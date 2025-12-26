@@ -25,6 +25,8 @@ body {
 header {
     grid-area: h1;
     background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav {
