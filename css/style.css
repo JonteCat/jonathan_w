@@ -6,12 +6,14 @@ body {
     background-color: #b58b63;
 }
 
-#wrapper {
-    
+.wrapper {
     width: 100%;
     height: 300vh;
     display: grid;
-    grid-template-rows: 1fr 0.7fr 5fr 5fr 5fr 3fr;
+}
+
+#wrapper_home {
+    grid-template-rows: 5% 2% 5fr 5fr 5fr 3fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "h1 h1"
@@ -20,6 +22,17 @@ body {
     "wt wt"
     "sc sc"
     "ft ft";
+}
+
+#wrapper_meny {
+    grid-template-rows: 5% 2% 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "h1 h1 h1"
+    "nv nv nv"
+    "wo wo wo"
+    "fi fi fi"
+    "do do do"
 }
 
 header {
@@ -80,10 +93,30 @@ section {
 
 .food_preview {
     background-color: blue;
+    width: 30%;
+    border-radius: 15px;
 }
 
 footer {
     display: flex;
     background-color: rgb(78, 70, 74);
     grid-area: ft;
+}
+
+.food_options {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 0 40px 0 40px;
+}
+#warm_options {
+    grid-area: wo;
+}
+
+#fika {
+    grid-area: fi;
+}
+
+#drink_options {
+    grid-area: do;
 }
