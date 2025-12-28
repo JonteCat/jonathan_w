@@ -27,14 +27,12 @@ body {
 
 #wrapper_meny {
     height: 100vh;
-    grid-template-rows: 15% 6% 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 6% 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "h1 h1 h1"
-    "nv nv nv"
-    "wo wo wo"
-    "fi fi fi"
-    "do do do"
+    "h1 h1"
+    "nv nv"
+    "mn mn"
 }
 
 header {
@@ -107,7 +105,7 @@ section {
 
 .meny_food_preview {
     background-color: blue;
-    width: 20%;
+    width: 15%;
     border-radius: 15px;
 }
 
@@ -117,21 +115,42 @@ footer {
     grid-area: ft;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    grid-area: mn;
+}
+
 .food_options {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     margin: 0 40px 0 40px;
+    height: 100%;
+}
+
+h3 {
+    background-color: green;
+    align-self: center;
+    margin: 0;
 }
 
 #warm_options {
-    grid-area: wo;
+    background-color: red;
 }
 
 #fika {
-    grid-area: fi;
+    background-color: purple;
 }
 
 #drink_options {
-    grid-area: do;
+    background-color: bisque;
+}
+
+.show_more_button {
+    text-decoration: dotted;
+    align-self: center;
+    margin-bottom: 20px;
 }
