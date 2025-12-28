@@ -13,7 +13,8 @@ body {
 }
 
 #wrapper_home {
-    grid-template-rows: 5% 2% 5fr 5fr 5fr 3fr;
+    height: 300vh;
+    grid-template-rows: 5% 2% 5fr 2fr 5fr 3fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "h1 h1"
@@ -25,7 +26,8 @@ body {
 }
 
 #wrapper_meny {
-    grid-template-rows: 5% 2% 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-rows: 15% 6% 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "h1 h1 h1"
@@ -52,6 +54,10 @@ nav {
     margin: 0 20px 0 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
 #homeButton {
     order: 1;
 }
@@ -80,20 +86,28 @@ nav {
 
 #welcomeText {
     grid-area: wt;
+    margin: 0 60px 0 ;
 }
+
 section {
     display: grid;
     background-color:aqua;
     gap: 20px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin: 0 60px 0 60px;
+    margin: 0 60px 20px 60px;
     grid-area: sc;
 }
 
-.food_preview {
+.home_food_preview {
     background-color: blue;
-    width: 30%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.meny_food_preview {
+    background-color: blue;
+    width: 20%;
     border-radius: 15px;
 }
 
@@ -109,6 +123,7 @@ footer {
     justify-content: space-evenly;
     margin: 0 40px 0 40px;
 }
+
 #warm_options {
     grid-area: wo;
 }
