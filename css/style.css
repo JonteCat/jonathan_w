@@ -37,7 +37,7 @@ body {
 
 header {
     grid-area: h1;
-    background-color: blue;
+    background-color: #a5b58d;
     display: flex;
     justify-content: space-evenly;
 }
@@ -48,7 +48,7 @@ nav {
     grid-area: nv;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: #f6efe8;
     margin: 0 20px 0 20px;
 }
 
@@ -71,11 +71,17 @@ a {
 #welcomePicture {
     display: flex;
     justify-content: center;
-    color: white;
+    align-items: center;
+    color: #f6efe8;
     grid-area: wp;
     background-color: green;
-    background-image: url("../img/");
-    margin: 20px 40px 0 40px
+    background-image: url("../img/cafe_interior.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    margin: 20px 40px 0 40px;
+    border: #f6efe8 solid;
 }
 
 .background-image {
@@ -89,7 +95,7 @@ a {
 
 section {
     display: grid;
-    background-color:aqua;
+    /* background-color:aqua; */
     gap: 20px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -101,6 +107,15 @@ section {
     background-color: blue;
     width: 100%;
     border-radius: 15px;
+}
+
+#food_example1 {
+    background-image: url("../img/fika_example1.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    border: #f6efe8 solid;
 }
 
 .meny_food_preview {
