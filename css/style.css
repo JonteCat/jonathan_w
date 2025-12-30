@@ -66,6 +66,7 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
 #homeButton {
     order: 1;
 }
@@ -121,11 +122,26 @@ section {
 
 #food_example1 {
     background-image: url("../img/food_example1.jpg");
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    background-position: center;
-    border: #f6efe8 solid;
+}
+
+#food_example2 {
+    background-image: url("../img/food_example2.jpg");
+}
+
+#food_example3 {
+    background-image: url("../img/");
+}
+
+h4 {
+    margin: 0;
+}
+
+aside {
+    border-radius: 15px;
+    background-color: #f6efe8;
+    padding-top: 10px;
+    padding-left: 15px;
+    border: #a5b58d solid;
 }
 
 .meny_food_preview {
@@ -137,6 +153,8 @@ section {
 footer {
     display: flex;
     background-color: rgb(78, 70, 74);
+    justify-content: flex-start;
+    gap: 4em;
     grid-area: ft;
 }
 
@@ -163,15 +181,15 @@ h3 {
 }
 
 #lunch1 {
-    background-image: url("../img/");
+    background-image: url("../img/lunch1.jpg");
 }
 
 #lunch2 {
-    background-image: url("../img/");
+    background-image: url("../img/lunch2.jpg");
 }
 
 #lunch3 {
-    background-image: url("../img/");
+    background-image: url("../img/lunch3.jpg");
 }
 
 #fika1 {
@@ -183,7 +201,7 @@ h3 {
 }
 
 #fika3 {
-    background-image: url("../img/");
+    background-image: url("../img/fika3.jpeg");
 }
 
 #drink1 {
@@ -191,11 +209,11 @@ h3 {
 }
 
 #drink2 {
-    background-image: url("../img/");
+    background-image: url("../img/drink2.jpg");
 }
 
 #drink3 {
-    background-image: url("../img/");
+    background-image: url("../img/drink3.jpg");
 }
 
 .show_more_button {
