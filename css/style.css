@@ -32,7 +32,7 @@ body {
     grid-template-areas:
     "h1 h1"
     "nv nv"
-    "mn mn"
+    "mn mn";
 }
 
 #wrapper_about {
@@ -42,14 +42,20 @@ body {
     grid-template-areas:
     "h1 h1"
     "nv nv"
-
+    "hi hi";
 }
 
 header {
     grid-area: h1;
     background-color: #a5b58d;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+
 }
 
 nav {
@@ -84,6 +90,7 @@ a {
     justify-content: center;
     align-items: center;
     color: #f6efe8;
+    font-size: 1.5rem;
     grid-area: wp;
     background-image: url("../img/cafe_interior.jpg");
     /* background-attachment: fixed; */
@@ -136,7 +143,7 @@ h4 {
     margin: 0;
 }
 
-aside {
+.textbox {
     border-radius: 15px;
     background-color: #f6efe8;
     padding-top: 10px;
@@ -219,4 +226,9 @@ h3 {
 .show_more_button {
     align-self: center;
     margin-bottom: 20px;
+}
+
+#history {
+    margin-top: 20px;
+    grid-area: hi;
 }
