@@ -35,6 +35,16 @@ body {
     "mn mn"
 }
 
+#wrapper_about {
+    height: 100vh;
+    grid-template-rows: 15% 6%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "h1 h1"
+    "nv nv"
+
+}
+
 header {
     grid-area: h1;
     background-color: #a5b58d;
@@ -74,18 +84,18 @@ a {
     align-items: center;
     color: #f6efe8;
     grid-area: wp;
-    background-color: green;
     background-image: url("../img/cafe_interior.jpg");
-    background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-size: cover;
-    background-position: center;
-    margin: 20px 40px 0 40px;
-    border: #f6efe8 solid;
+     margin: 20px 40px 0 40px;
+    
 }
 
-.background-image {
+.image {
     border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #f6efe8 solid;
+    background-position: center;
 }
 
 #welcomeText {
@@ -110,7 +120,7 @@ section {
 }
 
 #food_example1 {
-    background-image: url("../img/fika_example1.jpg");
+    background-image: url("../img/food_example1.jpg");
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: cover;
@@ -152,20 +162,43 @@ h3 {
     margin: 0;
 }
 
-#warm_options {
-    background-color: red;
+#lunch1 {
+    background-image: url("../img/");
 }
 
-#fika {
-    background-color: purple;
+#lunch2 {
+    background-image: url("../img/");
 }
 
-#drink_options {
-    background-color: bisque;
+#lunch3 {
+    background-image: url("../img/");
+}
+
+#fika1 {
+    background-image: url("../img/fika1.jpg");
+}
+
+#fika2 {
+    background-image: url("../img/fika2.jpg");
+}
+
+#fika3 {
+    background-image: url("../img/");
+}
+
+#drink1 {
+    background-image: url("../img/drink1.jpg");
+}
+
+#drink2 {
+    background-image: url("../img/");
+}
+
+#drink3 {
+    background-image: url("../img/");
 }
 
 .show_more_button {
-    text-decoration: dotted;
     align-self: center;
     margin-bottom: 20px;
 }
