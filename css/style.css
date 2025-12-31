@@ -14,7 +14,7 @@ body {
 
 #wrapper_home {
     height: 300vh;
-    grid-template-rows: 5% 2% 5fr 2fr 5fr 3fr;
+    grid-template-rows: 5% 2% 5fr 2fr 5fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "h1 h1"
@@ -37,12 +37,12 @@ body {
 
 #wrapper_about {
     height: 100vh;
-    grid-template-rows: 15% 6%;
+    grid-template-rows: 15% 6% 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "h1 h1"
     "nv nv"
-    "hi hi";
+    "hi xx";
 }
 
 header {
@@ -108,7 +108,7 @@ a {
 
 #welcomeText {
     grid-area: wt;
-    margin: 0 60px 0 ;
+    margin: 40px;
 }
 
 section {
@@ -136,7 +136,7 @@ section {
 }
 
 #food_example3 {
-    background-image: url("../img/");
+    background-image: url("../img/food_example3.jpg");
 }
 
 h4 {
@@ -148,6 +148,7 @@ h4 {
     background-color: #f6efe8;
     padding-top: 10px;
     padding-left: 15px;
+    padding-bottom: 10px;
     border: #a5b58d solid;
 }
 
@@ -182,9 +183,21 @@ main {
 }
 
 h3 {
-    background-color: green;
+
     align-self: center;
     margin: 0;
+}
+
+#contact {
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#book {
+    align-self: flex-start;
+    margin: 20px;
+    margin-left: 50px;
 }
 
 #lunch1 {
@@ -230,5 +243,13 @@ h3 {
 
 #history {
     margin-top: 20px;
+    margin-left: 20px; 
+    padding-right: 15px;
     grid-area: hi;
+}
+
+#location {
+    background-image: url("../img/location.jpg");
+    border: #a5b58d solid;
+    margin: 20px 20px 15px 40px;
 }
