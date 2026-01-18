@@ -52,10 +52,6 @@ header {
     gap: 10px;
 }
 
-h2 {
-
-}
-
 nav {
     display: flex;
     padding: 0 20px 0 20px;
@@ -88,6 +84,15 @@ a {
     justify-content: center;
     align-items: center;
     color: #f6efe8;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000,
+    -3px 0px 0 #000,
+    3px 0px 0 #000,
+    0px -3px 0 #000,
+    0px 3px 0 #000;
     font-size: 1.5rem;
     grid-area: wp;
     background-image: url("../img/cafe_interior.jpg");
@@ -159,6 +164,7 @@ footer {
     justify-content: flex-start;
     gap: 4em;
     grid-area: ft;
+    color:#f6efe8;
 }
 
 main {
@@ -177,16 +183,24 @@ main {
     height: 100%;
 }
 
-h3 {
+
+
+.meny_title {
 
     align-self: center;
     margin: 0;
+    font-size: 1.1em;
 }
 
 #contact {
     align-self: flex-start;
     margin-top: 20px;
     margin-left: 15px;
+}
+
+footer h3 {
+    align-self: center;
+    margin: 0;
 }
 
 #book {
